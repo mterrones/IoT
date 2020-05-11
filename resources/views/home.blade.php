@@ -14,7 +14,9 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    <div class="col-lg-12">
+                        
+                    </div>
                 </div>
             </div>
         </div>
