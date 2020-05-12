@@ -28,6 +28,6 @@ class Datas extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('datas');
     }
 }
