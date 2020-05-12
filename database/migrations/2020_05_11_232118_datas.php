@@ -14,7 +14,7 @@ class Datas extends Migration
     public function up()
     {
         Schema::create('datas', function (Blueprint $table) {
-            $table->string('id')->index();
+            $table->bigIncrements('id');
             $table->string('user_id');
             $table->timestamp('created_at')->nullable();
             $table->string('description');
