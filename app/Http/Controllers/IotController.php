@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\datas;
 use Response;
 use App\User;
+use Auth;
 
 class IotController extends Controller
 {
@@ -40,7 +41,7 @@ class IotController extends Controller
                     $destination = User::where('token',$to)->get();
             
                     datas::create([
-                        'user_id' => 1,
+                        'user_id' => Auth::user()->id,
                         'created_at' => date("Y-m-d h:m:i"),
                         'description'=> $description,
                         'to' => $to
