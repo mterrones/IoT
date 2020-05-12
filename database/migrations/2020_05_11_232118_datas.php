@@ -17,7 +17,8 @@ class Datas extends Migration
             $table->bigIncrements('id');
             $table->string('user_id');
             $table->timestamp('created_at')->nullable();
-            $table->string('description');
+            $table->string('description')->nullable();
+            $table->string('to')->nullable();
         });
     }
 
